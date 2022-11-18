@@ -6,7 +6,7 @@
     <property name="src.dir"          value="${webapp.dir}/src"/>
     <property name="classes.dir"      value="${webapp.dir}/src/main/webapp/WEB-INF/classes"/>
     <property name="lib.dir"          value="${webapp.dir}/src/main/webapp/WEB-INF/lib"/>
- 
+  
     <path id="classpath">
         <fileset dir="${lib.dir}" includes="**/*.jar"/>
     </path>
