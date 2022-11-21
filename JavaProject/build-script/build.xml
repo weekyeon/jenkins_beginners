@@ -23,6 +23,9 @@
     <target name="compile">
         <mkdir dir="${classes.dir}" />
         <javac srcdir="${src.dir}" destdir="${classes.dir}" debug="true" encoding="utf-8" classpathref="classpath" includeantruntime="false" />
+        <copy todir="${classes.dir}" verbose="true">
+        	<fileset dir="${src.dir}" includes="**/*.xml" />
+        </copy>
     </target>
  
  
