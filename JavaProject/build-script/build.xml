@@ -23,8 +23,8 @@
  
     <!-- Compile -->
     <target name="compile">
-        <mkdir dir="${classes.dir}" />
-        <mkdir dir="${copy.to.dir}" />
+        <mkdir dir="${classes.dir}" /> <!-- build -->
+        <!-- <mkdir dir="${copy.to.dir}" /> // ${BUILD_HOME}/src/main/webapp/WEB-INF/classes -->
         <javac srcdir="${src.dir}" destdir="${classes.dir}" debug="true" encoding="utf-8" classpathref="classpath" includeantruntime="false" />
         <copy todir="${classes.dir}" verbose="true">
         	<fileset dir="${src.dir}" includes="**/*.xml" />
