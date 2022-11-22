@@ -6,12 +6,10 @@
     <property name="src.dir"          value="../src"/>
     <property name="classes.dir"      value="${BUILD_HOME}/build"/>
     <property name="copy.to.dir"      value="${BUILD_HOME}/src/main/webapp/WEB-INF/classes"/>
-    <property name="lib.dir"          value="${BUILD_HOME}/src/main//webapp/WEB-INF/lib"/>
-    <property name="lib.dev.dir"      value="../lib"/>
+    <property name="lib.dir"          value="${BUILD_HOME}/src/main/webapp/WEB-INF/lib"/>
  
     <path id="classpath">
         <fileset dir="${lib.dir}" includes="**/*.jar"/>
-        <fileset dir="${lib.dev.dir}" includes="**/*.jar"/>
     </path>
  
     <!-- Clean classes directory -->
@@ -23,8 +21,9 @@
  
     <!-- Compile -->
     <target name="compile">
-        <mkdir dir="${classes.dir}" /> <!-- build -->
-        <!-- <mkdir dir="${copy.to.dir}" /> // ${BUILD_HOME}/src/main/webapp/WEB-INF/classes -->
+        <mkdir dir="${classes.dir}" />
+        <mkdir dir="${copy.to.dir}" />
+        <mkdir dir="${lib.dir}" />
         <javac srcdir="${src.dir}" destdir="${classes.dir}" debug="true" encoding="utf-8" classpathref="classpath" includeantruntime="false" />
         <copy todir="${classes.dir}" verbose="true">
         	<fileset dir="${src.dir}" includes="**/*.xml" />
