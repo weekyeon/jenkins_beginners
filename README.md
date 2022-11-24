@@ -30,3 +30,6 @@
 ## Concluding Remarks
 * Jenkins Build Trigger를 Github Webhook이 아닌 Git hook으로 연결하여 인터넷망이 없을 때도 CI/CD 자동화가 되도록 해결했다.
 * 그래서 이 Repository는 이제 쓰지 않아도 될 듯 하다!
+
+## TIL
+
