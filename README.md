@@ -22,7 +22,7 @@
   >
   > `7` Ant 및 Jenkins Job 설정을 통해 Build 결과물이 B Project의 적합한 위치에 이동됩니다.
 
-## ISSUE
+## Problem
 * 테스트를 하던 중 Github Webhook의 동작 원리(?)를 알게 되었다.
 * Github와 Jenkins의 Webhook은 Github가 Jenkins에게 HTTP POST 요청을 날리는 것으로부터 시작된다.
 * 인터넷망이 있다면 상관없지만 내 업무 환경은 인터넷망이 없기 때문에 Github의 Webhook을 통해 CI/CD를 진행하는 것이 어렵다고 판단했다.
