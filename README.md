@@ -1,5 +1,4 @@
 # jenkins_beginners
-:fire: Getting Started Jenkins
 
 ## Overview
 * Github로 관리하는 source 및 resource를 CI/CD 자동화 작업을 이용해 Build & Deploy하는 것이 목표이다.
